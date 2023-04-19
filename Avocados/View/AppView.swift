@@ -32,6 +32,11 @@ struct AppView: View {
                 }
         } //: TabView
         .tint(.primary)
+        .onAppear {
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithDefaultBackground()
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        }
     }
 }
 
