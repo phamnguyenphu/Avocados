@@ -31,15 +31,15 @@ struct AvocadosView: View {
                     .foregroundColor(.white)
                     .fontWeight(.bold)
                     .shadow(color: Color("ColorBlackTransparentDark"), radius: 4, x: 0, y: 4)
-                    .opacity(pulsateAnimation ? 0.6 : 1)
-                    .offset(y: pulsateAnimation ? 10 : 0)
+                    .offset(y: pulsateAnimation ? -10 : 0)
+                    .opacity(pulsateAnimation ? 0.5 : 1.0)
                 Text(avocadosContent)
                     .foregroundColor(Color("ColorGreenLight"))
                     .font(.system(.headline, design: .serif))
                     .multilineTextAlignment(.center)
                     .lineSpacing(8)
                     .frame(maxWidth: 640, minHeight: 120)
-                    .opacity(pulsateAnimation ? 1 : 0.6)
+                    .opacity(pulsateAnimation ? 0.3 : 1.0)
             } //: Vstack
             .padding()
             Spacer()
@@ -51,10 +51,11 @@ struct AvocadosView: View {
         )
         .ignoresSafeArea()
         .onAppear {
-            withAnimation(.easeInOut(duration: 0.75)) {
-                pulsateAnimation = true
+            pulsateAnimation = true
+
+            withAnimation(.easeInOut(duration: 1)) {
+                pulsateAnimation.toggle()
             }
-            pulsateAnimation.toggle()
         }
     }
 }
