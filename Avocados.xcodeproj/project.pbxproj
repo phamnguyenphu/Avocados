@@ -8,19 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		AB638D0D29EEDB6F001ADFF6 /* AvocadosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB638D0C29EEDB6F001ADFF6 /* AvocadosApp.swift */; };
-		AB638D0F29EEDB6F001ADFF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB638D0E29EEDB6F001ADFF6 /* ContentView.swift */; };
 		AB638D1129EEDB70001ADFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB638D1029EEDB70001ADFF6 /* Assets.xcassets */; };
 		AB638D1429EEDB70001ADFF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB638D1329EEDB70001ADFF6 /* Preview Assets.xcassets */; };
 		ABD342A929EFD4ED00E59F99 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD342A829EFD4ED00E59F99 /* Launch Screen.storyboard */; };
+		ABD342AE29EFE40F00E59F99 /* AvocadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD342AD29EFE40F00E59F99 /* AvocadosView.swift */; };
+		ABD342B029EFE42C00E59F99 /* RipeningStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD342AF29EFE42C00E59F99 /* RipeningStagesView.swift */; };
+		ABD342B229EFE46400E59F99 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD342B129EFE46400E59F99 /* SettingsView.swift */; };
+		ABD342B429EFE49C00E59F99 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD342B329EFE49C00E59F99 /* AppView.swift */; };
+		ABD342B629EFE53200E59F99 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD342B529EFE53200E59F99 /* RecipesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB638D0929EEDB6F001ADFF6 /* Avocados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avocados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB638D0C29EEDB6F001ADFF6 /* AvocadosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosApp.swift; sourceTree = "<group>"; };
-		AB638D0E29EEDB6F001ADFF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB638D1029EEDB70001ADFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB638D1329EEDB70001ADFF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ABD342A829EFD4ED00E59F99 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		ABD342AD29EFE40F00E59F99 /* AvocadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosView.swift; sourceTree = "<group>"; };
+		ABD342AF29EFE42C00E59F99 /* RipeningStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStagesView.swift; sourceTree = "<group>"; };
+		ABD342B129EFE46400E59F99 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		ABD342B329EFE49C00E59F99 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		ABD342B529EFE53200E59F99 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				AB638D0C29EEDB6F001ADFF6 /* AvocadosApp.swift */,
-				AB638D0E29EEDB6F001ADFF6 /* ContentView.swift */,
+				ABD342AB29EFE35F00E59F99 /* View */,
+				ABD342AA29EFE34B00E59F99 /* Model */,
+				ABD342AC29EFE39700E59F99 /* Data */,
 				AB638D1029EEDB70001ADFF6 /* Assets.xcassets */,
 				AB638D1229EEDB70001ADFF6 /* Preview Content */,
 				ABD342A829EFD4ED00E59F99 /* Launch Screen.storyboard */,
@@ -68,6 +78,32 @@
 				AB638D1329EEDB70001ADFF6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABD342AA29EFE34B00E59F99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABD342AB29EFE35F00E59F99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABD342AD29EFE40F00E59F99 /* AvocadosView.swift */,
+				ABD342AF29EFE42C00E59F99 /* RipeningStagesView.swift */,
+				ABD342B129EFE46400E59F99 /* SettingsView.swift */,
+				ABD342B329EFE49C00E59F99 /* AppView.swift */,
+				ABD342B529EFE53200E59F99 /* RecipesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ABD342AC29EFE39700E59F99 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB638D0F29EEDB6F001ADFF6 /* ContentView.swift in Sources */,
+				ABD342B229EFE46400E59F99 /* SettingsView.swift in Sources */,
+				ABD342B429EFE49C00E59F99 /* AppView.swift in Sources */,
+				ABD342B029EFE42C00E59F99 /* RipeningStagesView.swift in Sources */,
 				AB638D0D29EEDB6F001ADFF6 /* AvocadosApp.swift in Sources */,
+				ABD342B629EFE53200E59F99 /* RecipesView.swift in Sources */,
+				ABD342AE29EFE40F00E59F99 /* AvocadosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
