@@ -93,8 +93,8 @@
 				ABD342AD29EFE40F00E59F99 /* AvocadosView.swift */,
 				ABD342AF29EFE42C00E59F99 /* RipeningStagesView.swift */,
 				ABD342B129EFE46400E59F99 /* SettingsView.swift */,
-				ABD342B329EFE49C00E59F99 /* AppView.swift */,
 				ABD342B529EFE53200E59F99 /* RecipesView.swift */,
+				ABD342B329EFE49C00E59F99 /* AppView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
