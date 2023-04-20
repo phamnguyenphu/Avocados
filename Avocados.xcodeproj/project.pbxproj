@@ -13,6 +13,7 @@
 		AB748DD429F0FA120064176B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB748DD329F0FA120064176B /* HeaderView.swift */; };
 		AB748DD629F12C8C0064176B /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB748DD529F12C8C0064176B /* HeaderModel.swift */; };
 		AB748DDA29F12DA00064176B /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB748DD929F12DA00064176B /* HeaderData.swift */; };
+		AB748DDE29F142180064176B /* DishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB748DDD29F142180064176B /* DishesView.swift */; };
 		ABD342A929EFD4ED00E59F99 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD342A829EFD4ED00E59F99 /* Launch Screen.storyboard */; };
 		ABD342AE29EFE40F00E59F99 /* AvocadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD342AD29EFE40F00E59F99 /* AvocadosView.swift */; };
 		ABD342B029EFE42C00E59F99 /* RipeningStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD342AF29EFE42C00E59F99 /* RipeningStagesView.swift */; };
@@ -35,6 +36,7 @@
 		AB748DD329F0FA120064176B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		AB748DD529F12C8C0064176B /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
 		AB748DD929F12DA00064176B /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
+		AB748DDD29F142180064176B /* DishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesView.swift; sourceTree = "<group>"; };
 		ABD342A829EFD4ED00E59F99 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		ABD342AD29EFE40F00E59F99 /* AvocadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosView.swift; sourceTree = "<group>"; };
 		ABD342AF29EFE42C00E59F99 /* RipeningStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStagesView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AB748DDB29F135A20064176B /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				AB748DDC29F141C00064176B /* Components */,
+				ABD342B529EFE53200E59F99 /* RecipesView.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		AB748DDC29F141C00064176B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AB748DD329F0FA120064176B /* HeaderView.swift */,
+				AB748DDD29F142180064176B /* DishesView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		ABD342AA29EFE34B00E59F99 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,12 +130,11 @@
 		ABD342AB29EFE35F00E59F99 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AB748DDB29F135A20064176B /* Recipes */,
 				ABD342AD29EFE40F00E59F99 /* AvocadosView.swift */,
 				ABD342AF29EFE42C00E59F99 /* RipeningStagesView.swift */,
 				ABD342B129EFE46400E59F99 /* SettingsView.swift */,
-				ABD342B529EFE53200E59F99 /* RecipesView.swift */,
 				ABD342B329EFE49C00E59F99 /* AppView.swift */,
-				AB748DD329F0FA120064176B /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +244,7 @@
 				AB638D0D29EEDB6F001ADFF6 /* AvocadosApp.swift in Sources */,
 				ABD342B629EFE53200E59F99 /* RecipesView.swift in Sources */,
 				ABD342AE29EFE40F00E59F99 /* AvocadosView.swift in Sources */,
+				AB748DDE29F142180064176B /* DishesView.swift in Sources */,
 				AB748DDA29F12DA00064176B /* HeaderData.swift in Sources */,
 				AB748DD429F0FA120064176B /* HeaderView.swift in Sources */,
 			);
