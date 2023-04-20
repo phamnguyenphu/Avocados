@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct FactsView: View {
+    // MARK: - PROPERTY
+
+    var fact: Fact
+
+    // MARK: - BODY
+
     var body: some View {
-        Text("Avocado trees contain enzymes that prevent the fruit from ever ripening on the tree, allowing farmers to use the trees as storage devices for up to 7 months after they reach maturity.")
+        Text(fact.content)
             .padding(.leading, 50)
             .padding(.vertical)
             .frame(width: 300, height: 125, alignment: .center)
@@ -22,7 +28,7 @@ struct FactsView: View {
             .font(.footnote)
             .foregroundColor(.white)
             .overlay(alignment: .leading) {
-                Image("avocado-fact-1")
+                Image(fact.image)
                     .resizable()
                     .frame(width: 66, height: 66, alignment: .center)
                     .clipShape(Circle())
@@ -38,12 +44,13 @@ struct FactsView: View {
                     )
                     .offset(x: -33)
             }
+            .padding(.vertical)
     }
 }
 
 struct FactsView_Previews: PreviewProvider {
     static var previews: some View {
-        FactsView()
+        FactsView(fact: facts[0])
             .previewLayout(.fixed(width: 400, height: 220))
             .padding()
     }
