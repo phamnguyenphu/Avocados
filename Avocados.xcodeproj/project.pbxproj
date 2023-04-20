@@ -10,6 +10,7 @@
 		AB638D0D29EEDB6F001ADFF6 /* AvocadosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB638D0C29EEDB6F001ADFF6 /* AvocadosApp.swift */; };
 		AB638D1129EEDB70001ADFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB638D1029EEDB70001ADFF6 /* Assets.xcassets */; };
 		AB638D1429EEDB70001ADFF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB638D1329EEDB70001ADFF6 /* Preview Assets.xcassets */; };
+		AB748DD429F0FA120064176B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB748DD329F0FA120064176B /* HeaderView.swift */; };
 		ABD342A929EFD4ED00E59F99 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD342A829EFD4ED00E59F99 /* Launch Screen.storyboard */; };
 		ABD342AE29EFE40F00E59F99 /* AvocadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD342AD29EFE40F00E59F99 /* AvocadosView.swift */; };
 		ABD342B029EFE42C00E59F99 /* RipeningStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD342AF29EFE42C00E59F99 /* RipeningStagesView.swift */; };
@@ -29,6 +30,7 @@
 		AB638D0C29EEDB6F001ADFF6 /* AvocadosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosApp.swift; sourceTree = "<group>"; };
 		AB638D1029EEDB70001ADFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB638D1329EEDB70001ADFF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB748DD329F0FA120064176B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		ABD342A829EFD4ED00E59F99 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		ABD342AD29EFE40F00E59F99 /* AvocadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosView.swift; sourceTree = "<group>"; };
 		ABD342AF29EFE42C00E59F99 /* RipeningStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStagesView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				ABD342B129EFE46400E59F99 /* SettingsView.swift */,
 				ABD342B529EFE53200E59F99 /* RecipesView.swift */,
 				ABD342B329EFE49C00E59F99 /* AppView.swift */,
+				AB748DD329F0FA120064176B /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				AB638D0D29EEDB6F001ADFF6 /* AvocadosApp.swift in Sources */,
 				ABD342B629EFE53200E59F99 /* RecipesView.swift in Sources */,
 				ABD342AE29EFE40F00E59F99 /* AvocadosView.swift in Sources */,
+				AB748DD429F0FA120064176B /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
