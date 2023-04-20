@@ -33,12 +33,27 @@ struct RecipesView: View {
                 DishesView()
                     .frame(maxWidth: 640)
                 
+                // MARK: - FACTS
+                
+                Text("Avocado Facts")
+                    .modifier(TitleModifier())
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 60) {
+                        ForEach(facts) { item in
+                            FactsView(fact: item)
+                        }
+                    }
+                    .padding(.leading, 60)
+                    .padding(.trailing, 20)
+                }
+                
                 // MARK: - Footer
                 
                 VStack(alignment: .center, spacing: 20) {
                     Text("All about Avocados")
                         .modifier(TitleModifier())
-                        
+                    
                     Text("Everything you wanted to know about avocados but were too afraid to ask")
                         .font(.system(.body, design: .serif))
                         .multilineTextAlignment(.center)
