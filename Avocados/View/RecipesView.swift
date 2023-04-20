@@ -9,20 +9,24 @@ import SwiftUI
 
 struct RecipesView: View {
     // MARK: - PROPERTY
-
+    
     // MARK: - BODY
-
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 20) {
                 // MARK: - Header
-
+                
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HeaderView()
-                }
-
+                    HStack(spacing: 0) {
+                        ForEach(headers) { item in
+                            HeaderView(header: item)
+                        }
+                    } //: HStack
+                } //: ScrollView
+                
                 // MARK: - Footer
-
+                
                 VStack(alignment: .center, spacing: 20) {
                     Text("All about Avocados")
                         .font(.system(.title, design: .serif))
@@ -33,12 +37,13 @@ struct RecipesView: View {
                         .font(.system(.body, design: .serif))
                         .multilineTextAlignment(.center)
                         .foregroundColor(.gray)
-                }
+                } //: VStack
                 .frame(maxWidth: 640)
                 .padding()
                 .padding(.bottom, 85)
-            }
-        }
+            } //: VStack
+        } // ScrollView
+        .ignoresSafeArea()
     }
 }
 

@@ -7,6 +7,10 @@
 
 import Foundation
 
+// DATA
+
+let headers: [Header] = headerData
+
 // AVOCADOS CONTEXT
 
 let avocadosContent = "Creamy, green, and full of nutrients! Avocado is a powerhouse ingredient at any meal. Enjoy these handpicked avocado recipes for breakfast, lunch, dinner & more!"
