@@ -39,7 +39,7 @@ struct RecipesView: View {
                     .modifier(TitleModifier())
                 
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 66) {
+                    HStack(spacing: 60) {
                         ForEach(facts) { item in
                             FactsView(fact: item)
                         }
