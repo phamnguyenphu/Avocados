@@ -38,32 +38,11 @@ struct CardView: View {
                     .font(.system(.body, design: .serif))
                     .italic()
                 
-                HStack(spacing: 4) {
-                    ForEach(0 ..< (recipe.rating), id: \.self) { _ in
-                        Image(systemName: "star.fill")
-                            .foregroundColor(.yellow)
-                    }
-                }
+                RatingView(recipe: recipe)
                 
-                HStack(spacing: 12) {
-                    HStack {
-                        Image(systemName: "person.2")
-                        Text("Serves: \(recipe.serves)")
-                            .lineLimit(1)
-                    }
-                    HStack {
-                        Image(systemName: "clock")
-                        Text("Prep: \(recipe.preparation)")
-                            .lineLimit(1)
-                    }
-                    HStack {
-                        Image(systemName: "flame")
-                        Text("Cooking: \(recipe.cooking)")
-                            .lineLimit(1)
-                    }
-                }
-                .font(.system(.footnote, design: .serif))
-                .padding(.bottom)
+                CookingView(recipe: recipe)
+                    .font(.system(.footnote, design: .serif))
+                    .padding(.bottom)
             }
             .padding(.horizontal)
         }
