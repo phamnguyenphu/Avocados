@@ -48,6 +48,20 @@ struct RecipesView: View {
                     .padding(.trailing, 20)
                 }
                 
+                // MARK: - RECIPES
+
+                Text("Avocado Recipes")
+                    .modifier(TitleModifier())
+                
+                ScrollView(.vertical, showsIndicators: false) {
+                    ForEach(recipes) { item in
+                        VStack(alignment: .center, spacing: 20) {
+                            CardView(recipe: item)
+                        }
+                    }
+                    .frame(maxWidth: 640)
+                }
+                
                 // MARK: - Footer
                 
                 VStack(alignment: .center, spacing: 20) {
