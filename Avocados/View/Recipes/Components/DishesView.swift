@@ -101,7 +101,7 @@ struct DishesView: View {
         } //: HStack
         .font(.system(.callout, design: .serif))
         .foregroundColor(.gray)
-        .padding()
+        .padding(20)
         .frame(maxHeight: 220)
     }
 }
