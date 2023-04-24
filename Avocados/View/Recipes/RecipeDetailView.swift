@@ -14,6 +14,7 @@ struct RecipeDetailView: View {
     
     @State private var pulsate: Bool = false
     @State private var isAnimating: Bool = false
+    @Environment(\.dismiss) var dismiss
     
     // MARK: - BODY
     
@@ -25,7 +26,7 @@ struct RecipeDetailView: View {
                     .scaledToFit()
                     .opacity(isAnimating ? 1 : 0.5)
                     .scaleEffect(isAnimating ? 1 : 1.2)
-                
+                   
                 Group {
                     // Title
                     Text(recipe.title)
@@ -90,11 +91,14 @@ struct RecipeDetailView: View {
         } //: ScrollView
         .edgesIgnoringSafeArea(.top)
         .overlay(alignment: .topTrailing) {
-            Button {} label: {
+            Button {
+                dismiss()
+            } label: {
                 Image(systemName: "chevron.down.circle.fill")
                     .font(.title)
                     .foregroundColor(.white)
                     .padding(.trailing, 20)
+                    .padding(.top, 20)
                     .shadow(radius: 5)
                     .opacity(pulsate ? 1 : 0.5)
                     .scaleEffect(pulsate ? 1.2 : 0.8)

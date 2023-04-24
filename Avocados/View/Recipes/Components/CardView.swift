@@ -11,6 +11,8 @@ struct CardView: View {
     // MARK: - PROPERTY
     
     var recipe: Recipe
+    var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
+    @State private var showModal: Bool = false
     
     // MARK: - BODY
     
@@ -52,6 +54,13 @@ struct CardView: View {
         .cornerRadius(12)
         .shadow(color: Color("ColorBlackTransparentLight"), radius: 10)
         .padding(20)
+        .onTapGesture {
+            hapticImpact.impactOccurred()
+            showModal = true
+        }
+        .sheet(isPresented: $showModal) {
+            RecipeDetailView(recipe: recipe)
+        }
     }
 }
 

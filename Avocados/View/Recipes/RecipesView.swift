@@ -80,6 +80,9 @@ struct RecipesView: View {
             } //: VStack
         } // ScrollView
         .edgesIgnoringSafeArea(.top)
+        .onAppear {
+            scro
+        }
     }
 }
 
