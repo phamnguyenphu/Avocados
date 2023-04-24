@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct AppView: View {
     var body: some View {
@@ -13,25 +14,30 @@ struct AppView: View {
             AvocadosView()
                 .tabItem {
                     Image("tabicon-branch")
+                        .renderingMode(.template)
                     Text("Avocados")
                 }
+
             RecipesView()
                 .tabItem {
                     Image("tabicon-book")
+                        .renderingMode(.template)
                     Text("Recipes")
                 }
             RipeningStagesView()
                 .tabItem {
                     Image("tabicon-avocado")
+                        .renderingMode(.template)
                     Text("Ripenings")
                 }
             SettingsView()
                 .tabItem {
                     Image("tabicon-settings")
+                        .renderingMode(.template)
                     Text("Settings")
                 }
         } //: TabView
-        .tint(.primary)
+        .tint(Color("ColorGreenAdaptive"))
         .onAppear {
             let tabBarAppearance = UITabBarAppearance()
             tabBarAppearance.configureWithDefaultBackground()
