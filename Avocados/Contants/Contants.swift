@@ -15,6 +15,8 @@ let facts: [Fact] = factData
 
 let recipes: [Recipe] = recipeData
 
+let ripenings: [Ripening] = ripeningData
+
 // AVOCADOS CONTEXT
 
 let avocadosContent = "Creamy, green, and full of nutrients! Avocado is a powerhouse ingredient at any meal. Enjoy these handpicked avocado recipes for breakfast, lunch, dinner & more!"
