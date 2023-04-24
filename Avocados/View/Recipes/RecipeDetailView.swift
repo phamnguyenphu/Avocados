@@ -12,6 +12,9 @@ struct RecipeDetailView: View {
     
     var recipe: Recipe
     
+    @State private var pulsate: Bool = false
+    @State private var isAnimating: Bool = false
+    
     // MARK: - BODY
     
     var body: some View {
@@ -20,6 +23,8 @@ struct RecipeDetailView: View {
                 Image(recipe.image)
                     .resizable()
                     .scaledToFit()
+                    .opacity(isAnimating ? 1 : 0.5)
+                    .scaleEffect(isAnimating ? 1 : 1.2)
                 
                 Group {
                     // Title
@@ -79,9 +84,29 @@ struct RecipeDetailView: View {
                 } // Group
                 .padding(.horizontal, 24)
                 .padding(.vertical, 12)
+                .opacity(isAnimating ? 1 : 0.2)
+                .offset(y: isAnimating ? 0 : -10)
             } //: Vstack
         } //: ScrollView
         .edgesIgnoringSafeArea(.top)
+        .overlay(alignment: .topTrailing) {
+            Button {} label: {
+                Image(systemName: "chevron.down.circle.fill")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding(.trailing, 20)
+                    .shadow(radius: 5)
+                    .opacity(pulsate ? 1 : 0.5)
+                    .scaleEffect(pulsate ? 1.2 : 0.8)
+                    .animation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true), value: pulsate)
+            }
+        }
+        .onAppear {
+            pulsate.toggle()
+            withAnimation(.easeIn(duration: 0.75)) {
+                isAnimating.toggle()
+            }
+        }
     }
 }
 
