@@ -51,10 +51,12 @@ struct HeaderView: View {
                 )
             } //: HStack
             .frame(height: 105)
-            .offset(x: -66, y: showHeadline ? 75 : 220)
-            .animation(slideInAnimation, value: showHeadline)
+            .offset(x: -66, y: showHeadline ? 220 : 75)
             .onAppear {
-                showHeadline.toggle()
+                showHeadline = true
+                withAnimation(slideInAnimation) {
+                    showHeadline.toggle()
+                }
             }
         } //: ZStack
         .frame(width: 480, height: 320, alignment: .center)

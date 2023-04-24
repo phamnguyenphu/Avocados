@@ -11,6 +11,7 @@
 		AB0B4C8929F2F5960062F29F /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B4C8829F2F5960062F29F /* RecipeData.swift */; };
 		AB0B4C8B29F2FCA90062F29F /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B4C8A29F2FCA90062F29F /* RatingView.swift */; };
 		AB0B4C8D29F2FCD90062F29F /* CookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B4C8C29F2FCD90062F29F /* CookingView.swift */; };
+		AB0B4C8F29F2FDE60062F29F /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B4C8E29F2FDE60062F29F /* RecipeDetailView.swift */; };
 		AB638D0D29EEDB6F001ADFF6 /* AvocadosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB638D0C29EEDB6F001ADFF6 /* AvocadosApp.swift */; };
 		AB638D1129EEDB70001ADFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB638D1029EEDB70001ADFF6 /* Assets.xcassets */; };
 		AB638D1429EEDB70001ADFF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB638D1329EEDB70001ADFF6 /* Preview Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		AB0B4C8829F2F5960062F29F /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 		AB0B4C8A29F2FCA90062F29F /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		AB0B4C8C29F2FCD90062F29F /* CookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingView.swift; sourceTree = "<group>"; };
+		AB0B4C8E29F2FDE60062F29F /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		AB638D0929EEDB6F001ADFF6 /* Avocados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avocados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB638D0C29EEDB6F001ADFF6 /* AvocadosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosApp.swift; sourceTree = "<group>"; };
 		AB638D1029EEDB70001ADFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				AB748DDC29F141C00064176B /* Components */,
 				ABD342B529EFE53200E59F99 /* RecipesView.swift */,
+				AB0B4C8E29F2FDE60062F29F /* RecipeDetailView.swift */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				AB0B4C8D29F2FCD90062F29F /* CookingView.swift in Sources */,
 				ABD342C529F05B1A00E59F99 /* Contants.swift in Sources */,
 				AB638D0D29EEDB6F001ADFF6 /* AvocadosApp.swift in Sources */,
+				AB0B4C8F29F2FDE60062F29F /* RecipeDetailView.swift in Sources */,
 				ABD342B629EFE53200E59F99 /* RecipesView.swift in Sources */,
 				ABD342AE29EFE40F00E59F99 /* AvocadosView.swift in Sources */,
 				AB68AEA429F1AA98004914D2 /* FactData.swift in Sources */,
